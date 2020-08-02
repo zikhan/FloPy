@@ -4,3 +4,4 @@ build
 Lib
 *.suo
 packages
+*pyproj.user
