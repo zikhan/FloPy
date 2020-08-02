@@ -1,0 +1,18 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Royale"
+        Title="LineTestSystem" Height="300" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button Content="Button" Grid.Column="0" HorizontalAlignment="Left" Margin="22,122,0,0" VerticalAlignment="Top" Width="75"/>
+        <StackPanel Grid.Column="1">
+            <Polyline Fill="Black" Height="100" StrokeEndLineCap="Triangle" Stroke="Black" StrokeThickness="5" Points="{Binding RenderTransformOrigin.X, ElementName=box}"/>
+            <Rectangle x:Name="box" Fill="Black" Height="62" StrokeEndLineCap="Triangle" Stroke="Black" StrokeThickness="5" Margin="0,0,63,0"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

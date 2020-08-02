@@ -1,0 +1,6 @@
+.vs*
+obj
+build
+Lib
+*.suo
+packages

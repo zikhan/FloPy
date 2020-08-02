@@ -1,0 +1,86 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="tutorialWindow" Height="419.187" Width="607.705" WindowStyle="ThreeDBorderWindow" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterOwner">
+    <Window.Background>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!--Step 0: Welcome to FloPy-->
+        <Grid x:Name="G0" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Image Stretch="None" Grid.Row="0" Panel.ZIndex="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,191,0" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="2.6" ScaleX="2.6"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+                <Image.Source>
+                    <ImageSource>Resources/floPy Icon.ico</ImageSource>
+                </Image.Source>
+            </Image>
+            <Separator Grid.Row="1" VerticalAlignment="Top"/>
+            <TextBlock Margin="20" Text="Welcome to      v0.1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="SketchFlow Print" FontSize="45" FontWeight="Bold" TextAlignment="Center"/>
+            <TextBlock Margin="20" Grid.Row="1" FontSize="14" TextWrapping="Wrap" TextAlignment="Justify">
+                <Run Text="Welcome to my beautiful Programming Principles 1 semester project called FloPy (pronounced Flo-Py)! This program is designed to visualize code for the new Python programmer. This is a proof-of-concept and it was programmed entirely in Python using IronPython, an open-source implementation of Python 2.x with .NET integration. .NET was primarily used for the GUI, using the Windows Presentation Foundation (WPF). Because of the lack of time to develop this, there are a few kinks in the graphics and programming that need to be worked out. Those kinks DO NOT affect overall functionality, except when opening files, which I will address later."/>
+                <LineBreak/>
+                <LineBreak/>
+                <Run Text="Press Next to Continue"/>
+            </TextBlock>
+        </Grid>
+        <!--Step 1: Interface overview-->
+        <Grid x:Name="G1" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Margin="20,20,20,0" Grid.Row="0" Text="Interface Overview" FontSize="36" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Grid Grid.Row="1" Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" TextWrapping="Wrap" TextAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" VerticalAlignment="Center" HorizontalAlignment="Center"><Run Text="1. Create Ellipse"/><LineBreak/><LineBreak/><Run Text="2. Create Rectangle"/><LineBreak/><LineBreak/><Run Text="3. Create a Parallelogram"/><LineBreak/><Run/><LineBreak/><Run Text="4. Create a Diamond"/></TextBlock>
+                <Image Grid.Column="1" Source="Resources/mainWindow.PNG" RenderTransformOrigin="0.5,0.5" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="324" />
+                <TextBlock Grid.Column="2" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled"><Run Text="5. Flow Chart"/><LineBreak/><Run Text="The main program flow chart will show here"/><LineBreak/><Run/><LineBreak/><Run Text="6. Editor(tab-sensitive)"/><LineBreak/><Run Text="You can edit your code here."/></TextBlock>
+            </Grid>
+        </Grid>
+        
+        <!--Step 2: using the ellipse-->
+        <Grid x:Name="G2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <!--I STOPPED HERE ON 11/25 AM. I was finishing the ellipse tutorial.-->
+        </Grid>
+        <!--Step 3: using the rectangle-->
+        <Grid x:Name="G3"/>
+        <!--Step 4: using the parallelogram-->
+        <Grid x:Name="G4"/>
+        <!--Step 5: using the diamond-->
+        <Grid x:Name="G5"/>
+        <!--Step 6: saving files-->
+        <Grid x:Name="G6"/>
+        <!--Step 7: opening files-->
+        <Grid x:Name="G7"/>
+        <Separator Grid.Row="1" VerticalAlignment="Top" Margin="0" HorizontalAlignment="Stretch"/>
+        <WrapPanel Grid.Row="1" HorizontalAlignment="Right" Margin="20" ItemWidth="90">
+            <Button Content="Previous" HorizontalAlignment="Center" Width="65" Padding="5"/>
+            <Button Content="Next" HorizontalAlignment="Center" Width="65" Padding="5"/>
+            <Button Content="Close" HorizontalAlignment="Center" Width="65" Padding="5"/>
+        </WrapPanel>
+    </Grid>
+</Window>

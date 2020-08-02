@@ -1,0 +1,11 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Refresh Status" Height="140" Width="500" Topmost="True" WindowStartupLocation="CenterOwner" ResizeMode="CanMinimize" WindowStyle="ToolWindow" Loaded="Window_ContentRendered">
+    <Window.Background>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+    </Window.Background>
+    <Grid>
+        <ProgressBar x:Name="bar" Height="20" Margin="50,0" VerticalAlignment="Center"/>
+
+    </Grid>
+</Window>
