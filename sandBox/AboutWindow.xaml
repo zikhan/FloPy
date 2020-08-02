@@ -22,7 +22,7 @@
             <Run Text="Created For CS1411-001 [Dr. Susan Mengel]"/>
         </TextBlock>
         <TextBlock x:Name="visitMe" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top">
-            Visit me at <Hyperlink NavigateUri="http://zikhan.com" Click="Hyperlink_Click">zikhan.com</Hyperlink>
+            Visit me at <Hyperlink NavigateUri="http://zovink.com" Click="Hyperlink_Click">zovink.com</Hyperlink>
         </TextBlock>
         <Button Content="Close" HorizontalAlignment="Center" Margin="0,30,0,0" Grid.Row="2" VerticalAlignment="Center" Width="75" Click="Button_Click"/>
         <Image HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Margin="44,0,0,0" Grid.Row="1" Source="{Binding Source, Source={StaticResource flopy}}" Panel.ZIndex="1"/>

@@ -1,6 +1,7 @@
 import clr
 clr.AddReference('IronPython.Wpf')
 
+
 import wpf
 
 from System.Windows import Window
@@ -19,5 +20,5 @@ class AboutWindow(Window):
 		pass
 
 	def Hyperlink_Click(self, sender, e):
-		Process.Start('http://zikhan.com')
+		Process.Start('http://zovink.com')
 		pass
